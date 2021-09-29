@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+  
+}
+
+:root{
+    --secondary:hsla(249, 80%, 54%, 0.50 );
+    --primary :rgba(0, 0, 0, 0.637);
+    --secondary2:rgb(99, 1, 228);
+    --primary2 :hsla(279, 10%, 50%, 0.50);
+}
+
+.landing{
+    position: relative;
+    background:  rgb(88,69,165);
+    background: linear-gradient(180deg, var(--primary),var(--secondary)),
+    url(https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 220px 0 200px;
+    color: #fff;
+    
+}
+
+.landing .title, .text{
+    text-align: center;
+}
+
+.landing .title{
+    font-size: 5em;
+    letter-spacing: 2px;
+}
+.landing .text{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+
+
+ .blog .area2 .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:  solid 1px rgb(129, 129, 129);
+    margin: 3rem;
+    padding: 1rem;
+}
+
+
+.blog .area2 .card .card_body{
+margin-left: 1rem;
+margin-top: -2rem;
+font-size: 20px;
+
+}
+
+.blog .area2 .card .card_body a{
+    text-decoration: none;
+    color: #482BE7;
+}
+
+.blog .area2 .card .card_body .title{
+    color: #482BE7;
+    font-size: 30px;
+font-weight: 600;
+margin-bottom: 1rem;
+
+}
+.blog .area2 .card .card_body .subtitle{
+padding-bottom: 1rem;
+}
+
+/* .blog .area2{
+    background-color: rgb(224, 224, 224);
+} */
+
+.blog .area2 img{
+    width: 30%;
+    border-radius: 6px;
+}
+
+.author{
+    color: #e7382b;
+    font-weight: 600;
+}
+
+/* .footer{
+    padding: 2rem;
+    color: #21243D;
+    text-align: center;
+    justify-content: center;
+}
+.footer .icon{
+    margin-top: 2rem; 
+}
+
+.footer .icon .text{
+    text-align: center;
+}
+.footer .icon a{
+    text-decoration: none;
+    font-size: 30px;
+    justify-content:space-around;
+    margin-right: 1.5rem;
+    color: #21243D;
+} */
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+
+    .blog .area2 .card{
+        flex-direction: column;
+    }
+    .blog .area2 img{
+        width: 80vw;
+        margin-bottom: 2rem;
+    }
+}
